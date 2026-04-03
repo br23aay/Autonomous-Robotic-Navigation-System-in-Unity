@@ -9,13 +9,21 @@
 
 ---
 
+## 🎬 Demo
+
+▶️ **[Watch the full autonomous run on YouTube](https://youtu.be/2VZP29PA1Jk)**
+
+> The robot navigates the entire track using only sensor feedback — no pre-programmed path, no waypoints.
+
+---
+
 ## 🎯 Project Overview
 
 This project implements a fully autonomous robotic car in Unity that navigates a complex track using **raycast-based sensors**, completing the course successfully without any errors or manual intervention.
 
 The robot uses **7 directional sensors** to perceive its environment in real time — detecting lane boundaries, obstacles, and the end of the track — and makes continuous steering and acceleration decisions based on sensor feedback.
 
-**Key achievement:** The robot completed the full track successfully on the first run, with smooth path-following, stable speed control, and reliable obstacle avoidance — all driven purely by sensor logic, no pre-programmed path.
+**Key achievement:** The robot completed the full track successfully, with smooth path-following, stable speed control, and reliable obstacle avoidance — all driven purely by sensor logic, no pre-programmed path.
 
 ---
 
@@ -26,17 +34,17 @@ The robot makes all decisions in real time using sensor input — there is no pr
 ```
 Sensors (7 Raycasts)
         │
-        ├── Front sensor (FRS)       → Detects end of road
+        ├── Front sensor (FRS)             → Detects end of road
         ├── Left sensors (L1S, L2S, L3S)  → Lane boundary + obstacle detection
         └── Right sensors (R1S, R2S, R3S) → Lane boundary + obstacle detection
         │
         ▼
 Decision Logic (FixedUpdate loop)
         │
-        ├── StayOnLane()      → Steer left/right to stay within road boundaries
-        ├── AvoidObstacles()  → Steer away from detected obstacles
-        ├── AdjustCarAcceleration() → Maintain target speed (~4 m/s)
-        └── EndOfTrack()      → Apply full brakes when road ends
+        ├── StayOnLane()             → Steer left/right to stay within road boundaries
+        ├── AvoidObstacles()         → Steer away from detected obstacles
+        ├── AdjustCarAcceleration()  → Maintain target speed (~4 m/s)
+        └── EndOfTrack()             → Apply full brakes when road ends
         │
         ▼
 WheelCollider Physics
@@ -77,7 +85,7 @@ WheelCollider Physics
 - ✅ Stable speed maintained throughout (~4 m/s)
 - ✅ Obstacles successfully avoided
 - ✅ Clean stop at end of track
-- ✅ Video proof of full run available
+- 🎬 [Full video proof available on YouTube](https://youtu.be/2VZP29PA1Jk)
 
 ---
 
