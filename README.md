@@ -158,13 +158,13 @@ git clone https://github.com/br23aay/Autonomous-Robotic-Navigation-System-in-Uni
 ## 🔮 Future Work
 
 - [ ] **ML-Agents** — replace rule-based logic with a trained RL policy
-- [ ] - [ ] **Dynamic obstacles** that move during the run
-- [ ] - [ ] **Multi-robot scenarios** with inter-agent collision avoidance
-- [ ] - [ ] **ROS2 + Gazebo** port for real-world transfer
+- [ ] **Dynamic obstacles** that move during the run
+- [ ] **Multi-robot scenarios** with inter-agent collision avoidance
+- [ ] **ROS2 + Gazebo** port for real-world transfer
 
-- [ ] ---
+---
 
-- [ ] ## 👤 Author
+## 👤 Author
 
 - [ ] <div align="center">
 
