@@ -166,7 +166,7 @@ git clone https://github.com/br23aay/Autonomous-Robotic-Navigation-System-in-Uni
 
 ## 👤 Author
 
-- [ ] <div align="center">
+<div align="center">
 
 ### Bharadwaj Rachuri
 
