@@ -30,6 +30,12 @@ The robot makes all decisions in **real time** based on sensor data: detecting l
 >
 > ---
 >
+> ## 🧭 Note on Approach: Rule-Based Control, Not Machine Learning
+>
+> This project is a **classical, rule-based control system** — sensor thresholds and if/else decision logic in a `FixedUpdate` loop — not a trained ML or reinforcement-learning model. It's included here as robotics/controls engineering evidence (real-time sensor fusion, physics-based vehicle control), distinct from the ML/RL projects elsewhere in this profile. The "Future Work" section below notes the natural next step: replacing this rule-based controller with a trained RL policy (see `shadowhand-dexterity-ppo` for that approach applied to a different problem).
+>
+> ---
+>
 > ## 🏆 Results
 >
 > <div align="center">
@@ -161,6 +167,14 @@ git clone https://github.com/br23aay/Autonomous-Robotic-Navigation-System-in-Uni
 - [ ] **Dynamic obstacles** that move during the run
 - [ ] **Multi-robot scenarios** with inter-agent collision avoidance
 - [ ] **ROS2 + Gazebo** port for real-world transfer
+
+---
+
+## ⚠️ Limitations
+
+- **Single track, single environment.** The 100/100 result is on one designed track; there's no evidence yet of generalisation to unseen layouts or obstacle configurations.
+- **No learning component.** All behaviour comes from hand-tuned sensor thresholds and if/else logic — there was no training, evaluation dataset, or held-out test track involved.
+- **Simulation only**, with no attempt yet at sim-to-real transfer (unlike `shadowhand-dexterity-ppo`, which discusses this explicitly).
 
 ---
 
